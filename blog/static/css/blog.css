@@ -1,0 +1,40 @@
+/* Additional styles for Blog App */
+.blog-post {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-heading {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+
+/* 文章标题样式 */
+.detail-title {
+  text-align: center; /* 文章标题居中 */
+  /* font-family: '宋体', cursive, sans-serif;  */
+  margin-bottom: 20px; /* 添加标题与正文之间的底部间距 */
+}
+
+/* 文章内容样式 */
+.detail-content {
+  margin: 0 auto; /* 文章内容水平居中 */
+  width: 70%; /* 占页面70%的宽度 */
+  border: none; /* 去除边框 */
+}
+
+
+.blog-title{
+  font-style: italic;
+  font-family: 'Candara Light';
+}

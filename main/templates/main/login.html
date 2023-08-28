@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Index{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="login-container">
+        <h2 class="login-title">用户登录</h2>
+        <form class="login-form" action="" method="post">
+            {% csrf_token %}
+            <input class="login-input" type="text" placeholder="name">
+            <input class="login-input" type="password" placeholder="pwd">
+            <div class="button-div">
+                <a class="login-button" type="submit">登录</a>
+                <a class="register-button" href="{% url 'main:register' %}">注册</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

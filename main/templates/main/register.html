@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Index{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="login-container">
+        <h2 class="login-title">用户注册</h2>
+        <form class="login-form" action="/../newusr/" method="post">
+            {% csrf_token %}
+            <input class="login-input" type="text" placeholder="用户名" name="usrname">
+            <input class="login-input" type="password" placeholder="密码" name="pwd">
+            <input class="login-input" type="text" placeholder="邀请码" name="invitecode">
+            <div class="button-div">
+                <button class="register-buttont" type="submit">注册</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

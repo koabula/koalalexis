@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}My Blog{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+{% for post in blog_posts reversed %}
+<div class="blog-post">
+  <h2 class="blog-title"><a href="{% url 'blog:detail' blog_id=post.id %}" >{{ post.title }}</a></h2>
+  <hr>
+  <p class="post-content">{{ post.brief|truncatechars:200}}</p>
+</div>
+{% endfor %}
+{% endblock %}

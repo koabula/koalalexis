@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="icon" href="{% static 'image/icon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    <div id="navbar-wrapper">
+        <div id="navbar-container">
+            <div class="navbar">
+                <div class="navbar-title">
+                    Koala's &nbsp; Blog
+                </div>
+                <div class="navbar-links">
+                    <a href="{% url 'main:index' %}">Home</a>
+                    <a href="{% url 'blog:blog' %}">Blog</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 80px;"></div>
+
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <!-- 页脚内容 -->
+    </footer>
+</body>
+
+</html>

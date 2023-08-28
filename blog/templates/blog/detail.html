@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}My Blog{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$', '$'], ['$$', '$$']], processEscapes: true}
+});
+</script>
+<div class="detail-content">
+    <h1 class="detail-title">{{ post.title }}</h1>
+    <div class="text">{{ post.text|safe }}</div>
+</div>
+{% endblock %}

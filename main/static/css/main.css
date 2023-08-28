@@ -1,0 +1,79 @@
+/* Additional styles for Main App */
+.login-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.login-form {
+  display: inline-block;
+  text-align: left;
+}
+
+.login-input {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20%;
+}
+
+.button-div {
+  display: block; /* 设置为块级元素 */
+  margin: 0 auto; /* 水平居中 */
+  margin-top: 10%;
+}
+
+
+.register-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20%;
+  text-decoration: none;
+
+}
+
+.register-button:hover {
+  background-color: #0056b3; /* 悬停时的背景颜色，可以根据需要更改 */
+}
+
+.register-buttont {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* 设置为块级元素 */
+  margin: 0 auto; /* 水平居中 */
+}
+
+.kbutton {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* 设置为块级元素 */
+  margin: 0 auto; /* 水平居中 */
+  text-decoration: none;  /* 去除链接的下划线 */
+}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}contact{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<form action="email/" method="post">
+    {% csrf_token %}
+    <input type="text" name="q">
+    <input type="submit" value="搜索">
+</form>
+{% endblock %}
